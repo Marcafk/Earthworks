@@ -1,0 +1,5 @@
+[
+	
+	{ file: "game:recipes/grid/oillamp", op: "add", path: "/enabled",  value: "false" },
+	
+] 

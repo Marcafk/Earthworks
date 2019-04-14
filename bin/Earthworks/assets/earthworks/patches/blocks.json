@@ -1,0 +1,4 @@
+[
+	{ file: "game:blocktypes/clay/flowerpot", op: "add", path: "/enabled",  value: false },
+	{ file: "game:blocktypes/clay/pot", op: "add", path: "/enabled",  value: false },
+]

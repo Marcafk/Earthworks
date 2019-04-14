@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC72FCDD-DBFD-4AA6-A240-BE2277580DF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Earthworks</RootNamespace>
+    <AssemblyName>Earthworks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Earthworks\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cairo-sharp">
+      <HintPath>..\..\VS-1.9-pre\Lib\cairo-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommandLine">
+      <HintPath>..\..\VS-1.9-pre\Lib\CommandLine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="csogg">
+      <HintPath>..\..\VS-1.9-pre\Lib\csogg.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="csvorbis">
+      <HintPath>..\..\VS-1.9-pre\Lib\csvorbis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ENet">
+      <HintPath>..\..\VS-1.9-pre\Lib\ENet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\VS-1.9-pre\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\VS-1.9-pre\Lib\OpenTK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\VS-1.9-pre\Lib\protobuf-net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tavis.JsonPatch">
+      <HintPath>..\..\VS-1.9-pre\Lib\Tavis.JsonPatch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\VS-1.9-pre\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\VS-1.9-pre\VintagestoryLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>..\..\VS-1.9-pre\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>..\..\VS-1.9-pre\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>..\..\VS-1.9-pre\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Earthworks\Content\BlockEntity\CookedContainerFixBE.cs" />
+    <Compile Include="Earthworks\Content\Block\BlockBowlNew.cs" />
+    <Compile Include="Earthworks\Content\Block\CookedContainerFix.cs" />
+    <Compile Include="Earthworks\Content\Block\CookingContainerFix.cs" />
+    <Compile Include="Earthworks\Content\Utility\ArrayStuff.cs" />
+    <Compile Include="Earthworks\Debugging\RedirectLogs.cs" />
+    <Compile Include="Earthworks\Earthworks.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Earthworks\assets\earthworks\patches\blocks.json" />
+    <None Include="bin\Earthworks\assets\earthworks\patches\recipes.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl-meal.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\clayform.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\claypot-colors.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\crucible.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotblue.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotbrown.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotfire.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotred.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\ingotmold.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampblue.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampbrown.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampfire.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampred.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterblue.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterbrown.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterfire.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterred.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\toolmold.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\wateringcan.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\soil\clay.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\clay.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\clayworkitem.json" />
+    <None Include="bin\Earthworks\assets\game\lang\en.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\anvilmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\axemold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\bowl.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\clayplanter.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\claypot.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\crucible.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\flowerpot.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\fourbowls.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\fourclapots.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\fourcrucible.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\fourflowerpot.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\hammermold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\hoemold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\ingotmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\pickaxemold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\propickmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\shovelmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\swordmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\twoingotmold.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\clayforming\wateringcan.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\grid\beenade.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\grid\oillamp.json" />
+    <None Include="bin\Earthworks\assets\game\recipes\grid\poultice.json" />
+    <None Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\empty.json" />
+    <None Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\full.json" />
+    <None Include="bin\Earthworks\assets\game\worldgen\deposits\soil\clay.json" />
+    <None Include="bin\Earthworks\modinfo.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\blue-burned.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\blue-raw.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\blueclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\brown-burned.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\brown-raw.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\brownclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\ceramic-dark.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\ceramic.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\ceramic2.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\fire-burned.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\fire-raw.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\fireclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\blue-sides.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\blue-topbottom.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\brown-sides.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\brown-topbottom.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\fire-sides.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\fire-topbottom.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\red-sides.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\flowerpot\red-topbottom.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\pot\blue.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\pot\brown.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\pot\fire.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\pot\red.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\red-burned.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\red-raw.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\redclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\wateringcan\blue.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\wateringcan\brown.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\wateringcan\fire.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\clay\wateringcan\red.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\soil\brownclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\block\soil\redclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\item\resource\clay\raw-blueclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\item\resource\clay\raw-brownclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\item\resource\clay\raw-fireclay.png" />
+    <Content Include="bin\Earthworks\assets\game\textures\item\resource\clay\raw-redclay.png" />
+    <Content Include="bin\Earthworks\Earthworks.dll" />
+    <Content Include="bin\Earthworks\Earthworks.pdb" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
