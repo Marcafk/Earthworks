@@ -100,6 +100,7 @@
   <ItemGroup>
     <Compile Include="Earthworks\Content\BlockEntity\CookedContainerFixBE.cs" />
     <Compile Include="Earthworks\Content\Block\BlockBowlNew.cs" />
+    <Compile Include="Earthworks\Content\Block\BlockSmeltingContainerFix.cs" />
     <Compile Include="Earthworks\Content\Block\CookedContainerFix.cs" />
     <Compile Include="Earthworks\Content\Block\CookingContainerFix.cs" />
     <Compile Include="Earthworks\Content\Utility\ArrayStuff.cs" />
@@ -108,7 +109,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Earthworks\assets\earthworks\patches\blocks.json" />
     <None Include="bin\Earthworks\assets\earthworks\patches\recipes.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl-meal.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl.json" />
@@ -157,8 +157,6 @@
     <None Include="bin\Earthworks\assets\game\recipes\grid\beenade.json" />
     <None Include="bin\Earthworks\assets\game\recipes\grid\oillamp.json" />
     <None Include="bin\Earthworks\assets\game\recipes\grid\poultice.json" />
-    <None Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\empty.json" />
-    <None Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\full.json" />
     <None Include="bin\Earthworks\assets\game\worldgen\deposits\soil\clay.json" />
     <None Include="bin\Earthworks\modinfo.json" />
   </ItemGroup>
@@ -203,6 +201,8 @@
     <Content Include="bin\Earthworks\Earthworks.dll" />
     <Content Include="bin\Earthworks\Earthworks.pdb" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

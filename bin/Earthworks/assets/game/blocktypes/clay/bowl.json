@@ -8,11 +8,17 @@
 	],
 	attributesByType: {
 		"*-burned": {
-			itemContainers: {
+			contentItem2BlockCodes: {
 				"honeyportion": "bowl-{color}-honey",
-       
-		"*-honeyportion": {
-			bowlContents: "honeyportion",
+				"milkportion": "bowl-{color}-milk"
+			},
+			mealContainer: true,
+			mealBlockCode: "bowl-meal-{color}",
+			servingCapacity: 1,
+			bowlContents: null,
+		},
+		"*-honey": {
+			contentItemCode: "honeyportion",
 			emptiedBlockCode: "bowl-{color}-burned",
 		},
 		
@@ -33,7 +39,7 @@
 	},
 	shapeByType: {
 		"*-raw": { base: "block/clay/bowl-empty-ground" },
-    "*-burned": { base: "block/clay/bowl-empty-ground" },
+		"*-burned": { base: "block/clay/bowl-empty-ground" },
 		"*": { base: "block/clay/bowl-ground-liquid" },
 	},
 	blockmaterial: "Ceramic",

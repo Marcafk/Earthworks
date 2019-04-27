@@ -45,10 +45,12 @@
 	behaviors: [{name: "UnstableFalling"}],
 	variantgroups: [
 		{ code: "type", states: ["raw"] },
-		{ code: "empty", states: ["empty"], combine: "add" },
-		{ code: "flower", states:["lupine-blue", "lupine-orange", "lupine-purple", "lupine-red", "lupine-white"], loadFromProperties: "block/flower", combine: "add" },
-		{ code: "mushroom", loadFromProperties: "block/mushroom", combine: "add" },
-		{ code: "sapling", loadFromProperties: "block/wood", combine: "add" },
+    { 
+        code: "contents", 
+        states: ["empty", "lupine-blue", "lupine-orange", "lupine-purple", "lupine-red", "lupine-white"], 
+        loadFromPropertiesCombine: ["block/flower", "block/mushroom", "block/wood"],
+        combine: "add" 
+    }
 	],
 	shapeByType: {
 		"*-raw": { base: "block/clay/planter/planter-raw" },
@@ -68,7 +70,7 @@
 		"clayplanterblue-*": { 
 			"0": {  base: "block/clay/blue-burned" },
 			"1": {  base: "block/clay/planter/soil" }, 	
-			"flower": { base: "block/plant/potted/{flower|sapling|mushroom}" }
+			"flower": { base: "block/plant/potted/{contents}" }
 		},
 	},
 	sidesolid: {

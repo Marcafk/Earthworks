@@ -17,7 +17,8 @@
 			"*-westerngorse": true,
 			"*-cowparsley": true,
 			"*-californiapoppy": true,
-			"*-horsetail": true
+			"*-horsetail": true,
+			"*-lupine-*": true
 		},
 		butterflyFeedByType: {
 			"*-catmint": true,
@@ -29,15 +30,18 @@
 			"*-westerngorse": true,
 			"*-cowparsley": true,
 			"*-californiapoppy": true,
-			"*-horsetail": true
+			"*-horsetail": true,
+			"*-lupine-*": true
 		}
 	},
 	variantgroups: [
 		{ code: "type", states: ["raw"] },
-		{ code: "empty", states: ["empty"], combine: "add" },
-		{ code: "flower", states:["lupine-blue", "lupine-orange", "lupine-purple", "lupine-red", "lupine-white"], loadFromProperties: "block/flower", combine: "add" },
-		{ code: "mushroom", loadFromProperties: "block/mushroom", combine: "add" },
-		{ code: "sapling", loadFromProperties: "block/wood", combine: "add" },
+    { 
+        code: "contents", 
+        states: ["empty", "lupine-blue", "lupine-orange", "lupine-purple", "lupine-red", "lupine-white"], 
+        loadFromPropertiesCombine: ["block/flower", "block/mushroom", "block/wood"],
+        combine: "add" 
+    }
 	],
 	shapeByType: {
 		"*-raw": { base: "block/clay/flowerpot/empty" },
@@ -58,7 +62,7 @@
 		"flowerpotfire-*": {
 			"0": {  base: "block/clay/flowerpot/fire-topbottom" },
 			"1": {  base: "block/clay/flowerpot/fire-sides" },
-			"flower": { base: "block/plant/potted/{flower|sapling|mushroom}" }
+			"flower": { base: "block/plant/potted/{contents}" }
 		},
 	},
 	sidesolid: {

@@ -33,7 +33,9 @@ namespace Earthworks
             api.RegisterBlockClass("BlockCookingContainerFix", typeof(CookingContainerFix)); 
             
             api.RegisterBlockEntityClass("CookedContainerFix", typeof(CookedContainerFixBE));
-           
+
+            api.RegisterBlockClass("BlockSmeltingContainerFix", typeof(BlockSmeltingContainer));
+
         }
     }
 }
