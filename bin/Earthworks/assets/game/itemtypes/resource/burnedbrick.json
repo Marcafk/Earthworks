@@ -1,0 +1,13 @@
+{
+	code: "burnedbrick",
+	maxstacksize: 64,
+	variantgroups: [
+		{ code: "type", states: ["blue", "fire", "brown", "red" ] },
+	],
+	texture: { base: "item/resource/brick/burned/{type}" },
+	creativeinventory: { "general": ["*"], "items": ["*"] , "earthworks": ["*"] },
+	fpHandTransform: {
+		translation: { x: 0, y: -0.1, z: 0 },
+		rotation: { x: 180, y: 90, z: 5 }
+	}
+}

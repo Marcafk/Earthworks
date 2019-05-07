@@ -156,4 +156,28 @@
     "blockcraftdesc-ingotmold-*-raw": "To cast metal ingots for storage or later use on the anvil",
     "blockcraftdesc-claypot-colors-*-raw": "A large pot that can be used for cooking",
     "blockcraftdesc-wateringcan-*-raw": "Allows you to water farm land thats without nearby water source blocks",
+
+	"block-mudbrickslabs-light-down": "Light mudbrick slabs",
+    "block-mudbrickslabs-dark-down": "Dark mudbrick slabs",
+    "block-mudbrickstairs-light-up-north": "Light mudbrick stairs",
+    "block-mudbrickstairs-dark-up-north": "Dark mudbrick stairs",
+	"item-mudbrickraw-light": "Light mudbrick",
+    "item-mudbrickraw-dark": "Dark mudbrick",
+
+    "block-clayshingleslabs-blue-down": "Blue shingle slabs",
+    "block-clayshingleslabs-fire-down": "Fire shingle slabs",
+    "block-clayshingleslabs-red-down": "Red shingle slabs",
+    "block-clayshingleslabs-brown-down": "Brown shingle slabs",
+
+    "item-rawbrick-red": "Red brick (Raw)",
+    "item-rawbrick-brown": "Brown clay brick (Raw)", 
+
+    "item-shingleraw-blue": "Blue Shingle (Raw)",
+    "item-shingleraw-fire": "Firebrick Shingle (Raw)",
+    "item-shingleraw-red": "Red Shingle (Raw)",
+    "item-shingleraw-brown": "Brown Shingle (Raw)",
+    "item-shingleburned-blue": "Blue Shingle (Fired)",
+    "item-shingleburned-fire": "Firebrick Shingle (Fired)",
+    "item-shingleburned-red": "Red Shingle (Fired)",
+    "item-shingleburned-brown": "Brown Shingle (Fired)",
 	}
