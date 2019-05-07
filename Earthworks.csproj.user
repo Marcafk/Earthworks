@@ -2,12 +2,12 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Games\VS\VS-1.9-pre\Vintagestory.exe</StartProgram>
+    <StartProgram>C:\Games\VS\VS-1.9.X\Vintagestory.exe</StartProgram>
     <StartArguments>--dataPath="C:\Games\VS\Tony-Mods\ModDev\EarthWorksData" --addModPath="C:\Games\VS\Tony-Mods\Earthworks\bin"</StartArguments>
-    <StartWorkingDirectory>C:\Games\VS\VS-1.9-pre</StartWorkingDirectory>
+    <StartWorkingDirectory>C:\Games\VS\VS-1.9.X</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup>
-    <ReferencePath>C:\Games\VS\VS-1.9-pre\</ReferencePath>
+    <ReferencePath>C:\Games\VS\VS-1.9.X\</ReferencePath>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>

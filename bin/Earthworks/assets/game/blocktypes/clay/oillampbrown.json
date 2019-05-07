@@ -19,7 +19,7 @@
 	sideopaque: {
 		all: false
 	},
-	creativeinventory: { "general": ["*-up"], "decorative": ["*-up"], "earthworks": ["*-up"] },
+	creativeinventory: { "general": ["*-up"], "decorative": ["*-up"], "earthworks": [] },
 	replaceable: 5001,
 	resistance: 0,
 	maxStackSize: 8,

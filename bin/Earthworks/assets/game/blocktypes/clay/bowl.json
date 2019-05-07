@@ -1,10 +1,9 @@
 {
 	code: "bowl",
-	class: "BlockBowl",
 	behaviors: [{name: "UnstableFalling"}, { name: "RightClickPickup"}, { name: "SneakPlacing"} ],
 	variantgroups: [
 		{ code:"color", states: ["blue", "brown", "fire", "red"] },
-		{ code:"type", states: ["raw", "burned", "honey", ] },
+		{ code:"type", states: ["raw", "burned", "honey" ] },
 	],
 	attributesByType: {
 		"*-burned": {
@@ -21,7 +20,6 @@
 			contentItemCode: "honeyportion",
 			emptiedBlockCode: "bowl-{color}-burned",
 		},
-		
 		"*": {
 			bowlContents: null
 		}
@@ -35,15 +33,16 @@
 			smeltedStack: { type: "block", code: "bowl-{color}-burned" },
 			requiresContainer: false
 		},
-		
 	},
+	"__comment": "BlockBowl handles emptying/filling of honey over the bucket.",
+	class: "BlockBowl",
 	shapeByType: {
 		"*-raw": { base: "block/clay/bowl-empty-ground" },
 		"*-burned": { base: "block/clay/bowl-empty-ground" },
 		"*": { base: "block/clay/bowl-ground-liquid" },
 	},
 	blockmaterial: "Ceramic",
-	creativeinventory: { "general": ["*"], "decorative": ["*"], "earthworks": ["*"]},
+	creativeinventory: { "general": ["*"], "decorative": ["*"], "earthworks": ["*"] },
 	replaceable: 300,
 	resistance: 0.75,
 	maxStackSizeByType: {
@@ -62,7 +61,6 @@
 			all: { base: "block/clay/{color}-burned" },
 			content: { base: "block/liquid/honey" },
 		},
-		
 	},
 	sounds: {
 		walk: "walk/stone",
@@ -81,7 +79,7 @@
 		scale: 3
 	},
 	groundTransform: {
-		scale: 2.5
+		scale: 3.5
 	},
 	fpHandTransform: {
 		translation: { x: 0, y: 0.4, z: 0 },
