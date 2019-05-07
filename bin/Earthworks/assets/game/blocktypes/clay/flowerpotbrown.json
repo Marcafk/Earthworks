@@ -17,8 +17,7 @@
 			"*-westerngorse": true,
 			"*-cowparsley": true,
 			"*-californiapoppy": true,
-			"*-horsetail": true,
-			"*-lupine-*": true
+			"*-horsetail": true
 		},
 		butterflyFeedByType: {
 			"*-catmint": true,
@@ -30,8 +29,7 @@
 			"*-westerngorse": true,
 			"*-cowparsley": true,
 			"*-californiapoppy": true,
-			"*-horsetail": true,
-			"*-lupine-*": true
+			"*-horsetail": true
 		}
 	},
 	variantgroups: [

@@ -1,0 +1,27 @@
+{
+	code: "clayshingleblock",	
+	variantgroups: [
+		{ code:"color", states: ["blue", "brown", "fire", "red"] },
+	],
+	creativeinventory: { "general": ["*"], "construction": ["*"], "earthworks": ["*"]  },
+	shape: { base: "block/basic/cube" },
+	drawtype: "Cube",
+	sidesolid: { all: true },
+	sideopaque: { all: true },
+	blockmaterial: "Ceramic",
+	replaceable: 600,
+	resistance: 2.5,
+	lightAbsorption: 99,
+	textures: {
+		all: { base: "block/clay/shingles/{color}" },
+	},
+	sounds: {
+		walk: "walk/stone",
+	},
+	heldTpIdleAnimation: "holdbothhandslarge",
+	tpHandTransform: {
+		translation: { x: -1.2, y: -1.1, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.37
+	}
+}

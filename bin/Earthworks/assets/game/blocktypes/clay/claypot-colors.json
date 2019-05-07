@@ -2,8 +2,8 @@
 	code: "claypot-colors",
 	behaviors: [{name: "UnstableFalling"}],
 	classByType: {
-		"claypot-colors-*-burned": "BlockCookingContainerFix",
-		"claypot-colors-*-cooked": "BlockCookedContainerFix"
+		"claypot-colors-*-burned": "BlockCookingContainer",
+		"claypot-colors-*-cooked": "BlockCookedContainer"
 	},
 	heldTpIdleAnimation: "holdbothhands",
 	attributesByType: {
@@ -54,6 +54,7 @@
 				"redmeat-raw": ["meat", "group6"],
 				"egg-chicken-raw": ["egg", "group6"],
 				"poultry-raw": ["meat", "group5"],
+
 				
 				"mushroom-fieldmushroom-normal": ["vegetable", "group7"],
 				

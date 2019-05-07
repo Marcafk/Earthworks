@@ -32,35 +32,35 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="cairo-sharp">
-      <HintPath>..\..\VS-1.9-pre\Lib\cairo-sharp.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\cairo-sharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="CommandLine">
-      <HintPath>..\..\VS-1.9-pre\Lib\CommandLine.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\CommandLine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="csogg">
-      <HintPath>..\..\VS-1.9-pre\Lib\csogg.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\csogg.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="csvorbis">
-      <HintPath>..\..\VS-1.9-pre\Lib\csvorbis.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\csvorbis.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ENet">
-      <HintPath>..\..\VS-1.9-pre\Lib\ENet.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\ENet.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\VS-1.9-pre\Lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OpenTK">
-      <HintPath>..\..\VS-1.9-pre\Lib\OpenTK.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\OpenTK.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="protobuf-net">
-      <HintPath>..\..\VS-1.9-pre\Lib\protobuf-net.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\protobuf-net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -71,7 +71,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Tavis.JsonPatch">
-      <HintPath>..\..\VS-1.9-pre\Lib\Tavis.JsonPatch.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Lib\Tavis.JsonPatch.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VintagestoryAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -85,15 +85,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VSCreativeMod">
-      <HintPath>..\..\VS-1.9-pre\Mods\VSCreativeMod.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Mods\VSCreativeMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSEssentials">
-      <HintPath>..\..\VS-1.9-pre\Mods\VSEssentials.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Mods\VSEssentials.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VSSurvivalMod">
-      <HintPath>..\..\VS-1.9-pre\Mods\VSSurvivalMod.dll</HintPath>
+      <HintPath>..\..\..\VS-1.9.X\Mods\VSSurvivalMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -110,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Earthworks\assets\earthworks\patches\recipes.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\brick.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\brickslabs.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\brickstairs.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl-meal.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\bowl.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\clayform.json" />
@@ -119,6 +122,7 @@
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotbrown.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotfire.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\flowerpotred.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\hardenedclay.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\ingotmold.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampblue.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\oillampbrown.json" />
@@ -128,11 +132,19 @@
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterbrown.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterfire.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\planterred.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\shingleblock.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\shingleslabs.json" />
+    <None Include="bin\Earthworks\assets\game\blocktypes\clay\shinglestairs.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\toolmold.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\clay\wateringcan.json" />
     <None Include="bin\Earthworks\assets\game\blocktypes\soil\clay.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\burnedbrick.json" />
     <None Include="bin\Earthworks\assets\game\itemtypes\resource\clay.json" />
     <None Include="bin\Earthworks\assets\game\itemtypes\resource\clayworkitem.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\mudbrickraw.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\rawbrick.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\shingleburned.json" />
+    <None Include="bin\Earthworks\assets\game\itemtypes\resource\shingleraw.json" />
     <None Include="bin\Earthworks\assets\game\lang\en.json" />
     <None Include="bin\Earthworks\assets\game\recipes\clayforming\anvilmold.json" />
     <None Include="bin\Earthworks\assets\game\recipes\clayforming\axemold.json" />
@@ -202,7 +214,7 @@
     <Content Include="bin\Earthworks\Earthworks.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Earthworks\assets\game\shapes\block\clay\flowerpot\" />
+    <Folder Include="bin\Earthworks\assets\game\shapes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

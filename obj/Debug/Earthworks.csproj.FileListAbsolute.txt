@@ -28,3 +28,8 @@ C:\Games\VS\Tony-Mods\Earthworks\obj\Debug\Earthworks.csproj.CoreCompileInputs.c
 C:\Games\VS\Tony-Mods\Earthworks\obj\Debug\Earthworks.dll
 C:\Games\VS\Tony-Mods\Earthworks\obj\Debug\Earthworks.pdb
 C:\Games\VS\Tony-Mods\Earthworks\obj\Debug\Earthworks.csprojAssemblyReference.cache
+C:\Games\VS\Tony-Mods\Mark-Earthworks\Earthworks\bin\Earthworks\Earthworks.dll
+C:\Games\VS\Tony-Mods\Mark-Earthworks\Earthworks\bin\Earthworks\Earthworks.pdb
+C:\Games\VS\Tony-Mods\Mark-Earthworks\Earthworks\obj\Debug\Earthworks.csproj.CoreCompileInputs.cache
+C:\Games\VS\Tony-Mods\Mark-Earthworks\Earthworks\obj\Debug\Earthworks.dll
+C:\Games\VS\Tony-Mods\Mark-Earthworks\Earthworks\obj\Debug\Earthworks.pdb

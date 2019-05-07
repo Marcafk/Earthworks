@@ -10,6 +10,7 @@ namespace Earthworks
 {
     class BlockBowlNew : Block
     {
+        /*
         public string Contents()
         {
             string content = LastCodePart();
@@ -89,5 +90,6 @@ namespace Earthworks
             }
             slot.MarkDirty();
         }
+        */
     }
 }

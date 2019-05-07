@@ -29,12 +29,13 @@ namespace Earthworks
             base.Start(api);
 
             //api.RegisterBlockClass("BlockBowl", typeof(BlockBowlNew));
-            api.RegisterBlockClass("BlockCookedContainerFix", typeof(CookedContainerFix));
-            api.RegisterBlockClass("BlockCookingContainerFix", typeof(CookingContainerFix)); 
-            
-            api.RegisterBlockEntityClass("CookedContainerFix", typeof(CookedContainerFixBE));
+            api.RegisterBlockClass("BlockCookedContainer", typeof(CookedContainerFix));
+            api.RegisterBlockClass("BlockCookingContainer", typeof(CookingContainerFix));
 
-            api.RegisterBlockClass("BlockSmeltingContainerFix", typeof(BlockSmeltingContainer));
+            api.RegisterBlockClass("BlockSmeltingContainer", typeof(BlockSmeltingContainerFix));
+            api.RegisterBlockClass("BlockSmeltedContainer", typeof(BlockSmeltedContainerFix));
+
+            api.RegisterBlockEntityClass("CookedContainerFix", typeof(CookedContainerFixBE));
 
         }
     }
